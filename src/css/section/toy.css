@@ -1,0 +1,80 @@
+/* section4 : toy */
+.sec4Tit{
+    padding: 40.63vw 5.5vw 15.68vw;
+    font-size: 3.65vw;
+    font-family: "Playfair Display";
+    text-align: end;
+}
+/* Todo */
+.Toy{
+    width: 90%;
+    margin-left: 5%;
+    padding-bottom: 50px;
+    padding-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.ToyInfo{
+    width: calc(50% - 10px);
+    height: 55vh;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: var(--black-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--white-color);
+}
+.ToyTitle{
+    font-size: 2.65vw;
+    margin-top: 1vw;
+    font-weight: 600;
+}
+.ToySubTitle{
+    font-size: 1.04vw;
+    color: var(--point-color);
+    margin: 1vw 0;
+}
+.ToyText, .ToyDate{
+    width: 50%;
+    text-align: center;
+    font-size: 0.94vw;
+    margin-bottom: 1vw;
+}
+.ToyImg{
+    background-color: purple;
+    height: 55vh;
+    width: calc(50% - 10px);
+}
+.ToyBtn{
+    background-color: var(--black-color);
+    width: 100%;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ToyBtn>h2{
+    color: var(--white-color);
+    font-size: 2.65vw;
+    font-family: "Playfair Display";
+}
+
+.todoBtn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1%;
+    margin-top: 2%;
+}
+.todoBtn>.button>a{
+    display: inline-block;
+    transition: all 0.5s;
+    height: 80px;
+    min-width: 80px;
+    line-height: 80px;
+    font-size: 0.8vw;
+    font-weight: 600;
+}

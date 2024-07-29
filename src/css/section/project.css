@@ -1,0 +1,59 @@
+/* section3 : Project */
+.Project{
+    font-size: 3.65vw;
+}
+.ProjectTitleWrap{
+    padding: 25.63vw 0 7.68vw;
+    padding-left: var(--sec-padding-left);
+}
+.ProjectTitleWrap>div{
+    overflow: hidden;
+}
+.ProjectTitle{
+    width: 100%;
+    font-size: var(--main-tit-font2);
+    font-family: "Playfair Display";
+}
+.ProjectSite{
+    width: 100%; height: 100vh;
+    position: sticky;
+    left: 0; top: 0;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.ProjectSite:after{ 
+    content:""; 
+    display:block; 
+    position:absolute; 
+    top:0; right:0; bottom:0; left:0; 
+    background-color:rgba(0,0,0,0.5); 
+}
+.ProWrap{
+    position: absolute;
+    z-index: 1;
+    width: 100%; height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--white-color);
+    gap: var(--txt-gap);
+}
+.ProTitle{
+    font-size: var(--main-tit-font2);
+    font-family: "Playfair Display";
+}
+.ProTeam{
+    font-size: var(--tit-pink-font);
+    color: var(--point-color);
+}
+.ProText{
+    width: 40%;
+    font-size: var(--sub-txt-font);
+    text-align: center;
+} 
+.ProDate{
+    font-size: var(--sub-txt-font);
+    text-align: center;
+} 

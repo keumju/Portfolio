@@ -1,0 +1,85 @@
+/* navigation */
+header {
+    position: fixed;
+    width: 100%; 
+    z-index: 10;
+    min-width: 360px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    backdrop-filter: blur(15px);
+    background-color: hsla(0, 8%, 42%, .1);
+    position: relative;
+}
+.navL{
+    display: flex;
+    gap: 40%;
+}
+.navInfo{
+    display: flex;
+    gap: 20px;
+}
+.navInfo a{
+    font-size: max(1rem, 0.8vw);
+    color: rgb(146, 146, 146);
+}
+.navLogo{
+    width: 90px;
+}
+.navLogo img{
+    width: 100%;
+}
+
+.navR p{
+    font-size: max(1rem, 0.8vw);
+    color: rgb(146, 146, 146);;
+}
+.navR span{
+    font-size: max(1rem, 1.1vw);
+}
+
+/* small nav */
+.smallNav{
+    display: flex;
+    gap: 3px;
+}
+.smallNav>li{
+    cursor: pointer;
+    position: relative;
+    padding: 0 1.8rem;
+    height: 4.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+}
+.smallNav>li::before{
+    content: "";
+    display: block;
+    width: 100%; height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    background-color: #929292;
+    border-radius: 0.4rem;
+}
+.smallNav>li>p{
+    font-size: 1rem;
+    letter-spacing: 0.04em;
+    color: #eeede9;
+    z-index: 1;
+}
+.smallNav>li>span{
+    width: 15px;
+    height: 2px;
+    background-color: #eeede9;
+    z-index: 1;
+
+}
+
+.hamPopup{
+    position: absolute;
+}

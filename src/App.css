@@ -1,42 +1,69 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* Playfair */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-style: normal;
+}
+html{
+    font-size: 62.5%;
+}
+body {
+    font-family: 'Pretendard-Regular', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: var(--black-color);
+}
+li{
+    list-style: none;
+}
+main{
+    --bg-color : #222;
+    background-color: var(--bg-color);
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
+/* root */
+:root{
+    --main-tit-font : max(4rem, 6.7vw);
+    --main-tit-font2 : max(4rem, 4.17vw);
+    --main-txt-font : max(1rem, 1.25vw);
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+    --tit-pink-font : max(1.1rem, 1.04vw);
+    --sub-txt-font : max(1rem, 0.94vw);
+    --sub-txt-big-font : max(1rem, 1.04vw);
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
+    --sec-padding-left : 6.98vw;
+    --txt-gap : 1.30vw;
+    --txt-inner-gap : 1.58vw;
+    --txt-line-height : 1.50vw;
+    
+    --main-color : #FEADB3;
+    --point-color : #FF6585;
+    --black-color : #151515;
+    --white-color : #F8F8F4;
 
-.card {
-  padding: 2em;
-}
 
-.read-the-docs {
-  color: #888;
+    @media (max-width: 750px) {
+        --main-tit-font2 : max(4rem, 8.17vw);
+
+        --tit-pink-font : max(1.1rem, 2vw);
+        --sub-txt-font : max(1rem, 1.7vw);
+        --sub-txt-big-font : max(1rem, 1.7vw);
+
+        --sec-padding-left : 8.5vw;
+        --txt-gap : 2.5vw;
+        --txt-inner-gap : 2.9vw;
+        --txt-line-height : 2.5vw;
+    }
+
+    @media (max-width: 435px) {
+        --sec-padding-left : 6.5vw;
+        --txt-line-height : 3.5vw;
+    }
 }
