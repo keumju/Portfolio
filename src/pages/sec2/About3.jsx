@@ -3,15 +3,15 @@ const About3 = () => {
         {
             text: '깃허브 바로가기',
             Img: 'assets/git.png',
-            link: '#'
+            link: 'https://github.com/keumju'
         },{   
             text: '노션 블로그 바로가기',
             Img: 'assets/notion.png',
-            link: '#'
+            link: 'https://www.notion.so/STUDY-LOG-e406c0ca86c14023a6df436f1a3cabf7?pvs=4'
         },{
             text: '티스토리 블로그 바로가기',
             Img: 'assets/blog.png',
-            link: '#'
+            link: 'https://juukka.tistory.com/'
         }
     ]
 
@@ -37,7 +37,7 @@ const About3 = () => {
                 {infos.map((info, index)=>(
                     <div key={index}>
                         <img src={info.Img} alt="icon"/>
-                        <a href={info.link}>
+                        <a href={info.link} target='_blank'>
                             <p>{info.text} <img className='snsArrow' src="assets/arrow.png" alt="arrow"/></p>
                         </a>
                     </div>

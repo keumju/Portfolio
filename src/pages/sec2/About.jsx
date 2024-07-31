@@ -19,7 +19,7 @@ const About = () => {
     const aboutImg = aboutImgRef.current;
 
     let scrollAbout = gsap.fromTo(aboutImg,{
-      scale: 0.8
+      scale: 0.5
     },{
       scale: 1,
       scrollTrigger: {
@@ -27,7 +27,7 @@ const About = () => {
         start: "-20% top",
         end: "top 10%",
         scrub: 1,
-        markers: true
+        markers: false
       }
     })
     return () => {

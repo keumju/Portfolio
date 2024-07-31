@@ -14,9 +14,11 @@ nav{
     background-color: hsla(0, 8%, 42%, .1);
     position: relative;
 }
-.navL{
-    display: flex;
-    gap: 40%;
+.navLogo{
+    width: 90px;
+}
+.navLogo img{
+    width: 100%;
 }
 .navInfo{
     display: flex;
@@ -26,60 +28,284 @@ nav{
     font-size: max(1rem, 0.8vw);
     color: rgb(146, 146, 146);
 }
-.navLogo{
-    width: 90px;
+.navR{
+    cursor: pointer;
 }
-.navLogo img{
+.navContact{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.navContact p{
+    font-size: max(1rem, 0.8vw);
+    color: rgb(146, 146, 146);
+    position: relative;
+    white-space: nowrap;
+}
+.navR .navContact>p::after{
+    content: "LET'S TALK";
+    display: block;
+    position: absolute;
+    top: 0; left: 0;
+    color: #eeede9;
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: 0.3s ease-out width;
+}
+.navR:hover .navContact>p::after{
     width: 100%;
 }
-
-.navR p{
-    font-size: max(1rem, 0.8vw);
-    color: rgb(146, 146, 146);;
-}
-.navR span{
-    font-size: max(1rem, 1.1vw);
-}
-
-/* small nav */
-.smallNav{
-    display: flex;
-    gap: 3px;
-}
-.smallNav>li{
-    cursor: pointer;
+.navContact>div{
+    width: 3.5rem; height: 3.5rem;
     position: relative;
-    padding: 0 1.8rem;
-    height: 4.2rem;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 3px;
+    border-radius: 0.4rem;
+    background-color: hsla(0, 8%, 42%, .2);
 }
-.smallNav>li::before{
-    content: "";
+.navR .navContact>div::after{
+    content: '';
     display: block;
+    background-color: #929292;
+    border-radius: 0.4rem;
     width: 100%; height: 100%;
     position: absolute;
     top: 0; left: 0;
+    z-index: -1;
+    transform-origin: top left;
+    transform: scale(0) rotate(-45deg);
+    transition: transform 0.8s cubic-bezier(.22,1,.36,1);
+}
+.navContact>div>p{
+    color: rgb(146, 146, 146); transform: translate(0);
+}
+.navR:hover .navContact>div>p{
+    color: #eeede9;
+    transition: 0.8s;
+}
+.navR:hover .navContact>div::after{
+    transform: scale(1) rotate(0);
+    transform-origin: top right;
+    transition: 0.8s cubic-bezier(.22,1,.36,1);
+    transition-timing-function: cubic-bezier(.84,0,.16,1);
+}
+.navInfo{
+    position: relative;
+}
+.navInfo>li:nth-child(1)>a::after{
+    content: 'ABOUT';   
+}
+.navInfo>li:nth-child(2)>a::after{
+    content: 'PROJECT';   
+}
+.navInfo>li:nth-child(3)>a::after{
+    content: 'CLONE';   
+}
+.navInfo>li>a::after{
+    display: block;
+    position: absolute;
+    top: 0;
+    color: #eeede9;
+    width: 0%;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: 0.6s ease-out width;
+}
+.navInfo>li>a:hover::after{
+    width: 30%;
+}
+
+.navColor{
+    backdrop-filter: none;
+    background-color: transparent;
+}
+/* subNav--------------------------------- */
+.subNavWrap{
+    width: 100%; height: 100%;
+    position: fixed;
+    top: 0; right: -100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    z-index: -1;
+    transition: 0.6s ease-in-out;
+}
+.subNavWrapOpen{
+    right: 0;
+    backdrop-filter: blur(2.5rem);
+    transition: 0.6s ease-in-out;
+}
+.subNav{
+    width: 60.73333vw;
+    height: calc(100% - 1rem);
+    background-color: #eeede9;
+    transition: transform 1s cubic-bezier(.22,1,.36,1);
+    border-radius: 0.4rem;
+    margin-right: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 2rem;
+    position: relative;
+    right: -100%;
+}
+.subNavOpen{
+    right: 0;
+    transition: 0.6s ease-in-out;
+}
+.subNav>ul{ 
+    transition: transform 1s cubic-bezier(.22,1,.36,1);
+    padding-bottom: 2.77778vw;
+}
+.subList{
+    font-size: 2.6rem;
+    letter-spacing: -0.025em;
+    color: #929292;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+.subList>a{
+    color: #929292;
+}
+.subNav>div{
+    border-top: .1rem solid hsla(0,0%,57%,.2);
+    border-bottom: .1rem solid hsla(0,0%,57%,.2);
+    width: 100%;
+    font-weight: bold;
+    letter-spacing: -0.025em;
+    color: #929292;
+    padding: 2.63889vw 0 2.77778vw;
+}
+.subNav>div>p{
+    font-size: max(7vw, 4.09722vw);
+}
+.subNavContact{
+    cursor: pointer;
+    display: flex;
+    font-size: 2.3rem;
+    padding-top: 0.7vw;
+    align-items: center;
+    gap: 5px;
+}
+.subNavContact>div{
+    width: 4.5rem; height: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.4rem;
+    background-color: hsla(0, 8%, 42%, .2);
+    position: relative;
+}
+.subNavContact>div::after{
+    content: '';
+    display: block;
     background-color: #929292;
     border-radius: 0.4rem;
-}
-.smallNav>li>p{
-    font-size: 1rem;
-    letter-spacing: 0.04em;
-    color: #eeede9;
-    z-index: 1;
-}
-.smallNav>li>span{
-    width: 15px;
-    height: 2px;
-    background-color: #eeede9;
-    z-index: 1;
-
-}
-
-.hamPopup{
+    width: 100%; height: 100%;
     position: absolute;
+    top: 0; left: 0;
+    /* z-index: -1; */
+    transform-origin: top left;
+    transform: scale(0) rotate(-45deg);
+    transition: transform 0.8s cubic-bezier(.22,1,.36,1);
+}
+.subNavContact:hover>div::after{
+    transform: scale(1) rotate(0);
+    transform-origin: top right;
+    transition: 0.8s cubic-bezier(.22,1,.36,1);
+    transition-timing-function: cubic-bezier(.84,0,.16,1);
+}
+.subNavContact>div>p{
+    color: rgb(146, 146, 146); transform: translate(0);
+    z-index: 1;
+}
+.subNavContact:hover>div>p{
+    color: #eeede9;
+    transition: 0.8s;
+}
+.subMyInfo{
+    padding: 1.38889vw 0 0;
+}
+.subMyInfo>li{
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+    margin-bottom: 1vw;
+    font-size: max(1rem, 0.8vw);
+}
+.subMyInfo img{
+    width: max(2rem, 2vw);
+    margin-top: 1px;
+}
+@media (max-width: 750px) {
+    .navInfo{
+        display: none;
+    }
+    .navR{
+        display: flex;
+        gap: 3px;
+    }
+    .navContact>p{
+        height: 4.2rem;
+        padding: 0 1.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #929292;
+        border-radius: 0.4rem;
+        color: #eeede9;
+        font-size: 1rem;
+        letter-spacing: 0.04em;
+        color: #eeede9;
+    }
+    .navContact>div{
+        display: none;
+    }
+    .navR .navContact>p::after{
+        display: none;
+    }
+    .navHam{
+        width: 4.2rem; height: 4.2rem;
+        background-color: #929292;
+        border-radius: 0.4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3px;
+        position: relative;
+    }
+    .navHam>span{
+        width: 20px; height: 2px;
+        background-color: #eeede9;
+        transition: 0.6s ease-out;
+    }
+    .navHam>span:nth-child(2){
+        width: 15px;
+        margin-right: 5px;
+    }
+    .subRotR{
+        transition: 0.6s ease-out;
+        transform: rotate(45deg);
+        position: absolute;
+        top: 50%;
+        position: absolute;
+        top: 50%;
+    }
+    .subRotC{
+        opacity: 0;
+        transition: 0.6s ease-out;
+    }
+    .subRotL{
+        position: absolute;
+        top: 50%;
+        transition: 0.6s ease-out;
+        transform: rotate(-45deg);
+    }
+    .subNav{
+        width: 80.73333vw;
+    }
 }

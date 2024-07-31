@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import Button from '../Button';
+import Button from '../../components/Button';
 
 const Todo = ()=>{
     let btnData = [{
@@ -33,7 +33,7 @@ const Todo = ()=>{
             start: "-20% top",
             end: "top 10%",
             scrub: 1,
-            markers: true
+            markers: false
           }
         })
         return () => {

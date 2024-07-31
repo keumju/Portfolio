@@ -4,7 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import { projectDatas } from "../../data";
 
-import Button from '../Button';
+import Button from '../../components/Button';
 
 const Project = () => { 
 
@@ -26,7 +26,7 @@ const Project = () => {
             start: "-20% top",
             end: "top 10%",
             scrub: 1,
-            markers: true
+            markers: false
           }
         })
         return () => {

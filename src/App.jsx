@@ -18,13 +18,13 @@ import './css/section/toy.css'
 import './css/section/clone.css'
 import './css/section/footer.css'
 
-import Header from './components/Header.jsx'
-import Portfolio from './components/sec1/Portfolio.jsx'
-import About from './components/sec2/About.jsx';
-import Project from './components/sec3/Project.jsx'
-import Todo from './components/sec4/Todo.jsx'
-import Clone from './components/sec5/Clone.jsx'
-import Footer from './components/Footer.jsx'
+import Header from './pages/Header.jsx'
+import Portfolio from './pages/sec1/Portfolio.jsx'
+import About from './pages/sec2/About.jsx';
+import Project from './pages/sec3/Project.jsx'
+import Todo from './pages/sec4/Todo.jsx'
+import Clone from './pages/sec5/Clone.jsx'
+import Footer from './pages/Footer.jsx'
 
 function App() {
 
@@ -50,7 +50,7 @@ function App() {
 			start: "-500px -56px",
 			end: "top top",
 			scrub: 1,
-			markers: true,
+			markers: false,
 		}
 		})
 	
