@@ -36,7 +36,7 @@ nav{
     gap: 5px;
     align-items: center;
 }
-.navContact p{
+.navContact p, .closes{
     font-size: max(1rem, 0.8vw);
     color: rgb(146, 146, 146);
     position: relative;
@@ -180,12 +180,12 @@ nav{
     padding: 2.63889vw 0 2.77778vw;
 }
 .subNav>div>p{
-    font-size: max(7vw, 4.09722vw);
+    font-size: max(9vw, 4.09722vw);
 }
 .subNavContact{
     cursor: pointer;
     display: flex;
-    font-size: 2.3rem;
+    font-size: 2.2rem;
     padding-top: 0.7vw;
     align-items: center;
     gap: 5px;
@@ -233,11 +233,23 @@ nav{
     display: flex;
     align-items: center;
     gap: 0.5vw;
-    margin-bottom: 1vw;
+    margin-bottom: 0.3vw;
+}
+.subMyInfo>li:nth-child(1){
+    margin-bottom: 0.5vw;
+}
+.contactName{
+    font-size: max(1.2rem, 1.3vw);
+    font-weight: bold;
+    color: #929292;
+}
+.contactInfo{
     font-size: max(1rem, 0.8vw);
+    color: #929292;
+
 }
 .subMyInfo img{
-    width: max(2rem, 2vw);
+    width: max(2rem, 1.3vw);
     margin-top: 1px;
 }
 @media (max-width: 750px) {

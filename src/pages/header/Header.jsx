@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { headerNav } from '../data';
+import { headerNav } from '../../data';
 
 const Header = ()=>{
     let [open, setOpen] = useState(false);
@@ -7,13 +7,10 @@ const Header = ()=>{
         setOpen(open => !open)
     }
     
-    // function scrollToTop(){
-    //     setOpen(false)
-    //     window.scrollTo({
-    //         top: 0,
-    //         behavior: 'smooth'
-    //     })
-    // }
+    const rotate = {
+        transfrom : 'rotate(45deg)',
+        display : 'block'
+    }
 
     return(
         <>
@@ -30,10 +27,21 @@ const Header = ()=>{
             }
             <ul className='navR'>
                 <li className='navContact' onClick={subOpen}>
-                    <p>LET'S TALK</p>
-                    <div>
-                        <p>+</p>
-                    </div>
+                    {open ? 
+                    <>
+                        <span className='closes'>close</span>
+                        <div>
+                            <p>X</p>
+                        </div>
+                    </>
+                    :
+                    <>
+                        <p>LET'S TALK</p>
+                        <div>
+                            <p>+</p>
+                        </div>
+                    </>
+                    }
                 </li>
                 <li className='navHam' onClick={subOpen}>
                     <span className={open ? 'subRotR' : ''}></span>
@@ -59,11 +67,14 @@ const Header = ()=>{
                     </div>
                 </div>
                 <ul className='subMyInfo'>
-                    <li>
+                    <li className='contactName'>
+                        김금주
+                    </li>
+                    <li className='contactInfo'>
                         <img src='assets/birth.svg'/>
                         <p>010-6388-7821</p>
                     </li>
-                    <li>
+                    <li className='contactInfo'>
                         <img src='assets/address.svg'/>
                         <p>goldweek49@naver.com</p>
                     </li>

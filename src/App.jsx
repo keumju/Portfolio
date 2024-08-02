@@ -18,7 +18,7 @@ import './css/section/toy.css'
 import './css/section/clone.css'
 import './css/section/footer.css'
 
-import Header from './pages/Header.jsx'
+import Header from './pages/header/Header.jsx'
 import Portfolio from './pages/sec1/Portfolio.jsx'
 import About from './pages/sec2/About.jsx';
 import Project from './pages/sec3/Project.jsx'
