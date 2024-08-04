@@ -80,7 +80,7 @@
     }
     .panel{
         justify-content: center;
-        align-items: start;
+        align-items: none;
         padding-right: 0;
     }
     .panel__content{

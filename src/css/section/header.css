@@ -13,6 +13,7 @@ nav{
     backdrop-filter: blur(15px);
     background-color: hsla(0, 8%, 42%, .1);
     position: relative;
+    overflow: hidden;
 }
 .navLogo{
     width: 90px;

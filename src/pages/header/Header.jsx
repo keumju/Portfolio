@@ -50,6 +50,7 @@ const Header = ()=>{
                 </li>
             </ul>
         </nav>
+        <div className='subNavHidden'>
         <div className={open ? 'subNavWrap subNavWrapOpen' : 'subNavWrap'}>
             <div className={open ? 'subNav subNavOpen' : 'subNav'}>
                 <ul>
@@ -80,6 +81,7 @@ const Header = ()=>{
                     </li>
                 </ul>
             </div>
+        </div>
         </div>
         </>
     )

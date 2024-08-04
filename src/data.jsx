@@ -1,4 +1,3 @@
-import festival from '../public/assets/대한민국밤산책.mp4'
 import site from '../public/assets/web.png'
 import figma from '../public/assets/figma.png'
 import git from '../public/assets/git2.png'
@@ -24,10 +23,9 @@ export const projectDatas = [{
     class: 'Festival',
     siteName: 'FESTIVAL SITE',
     teamName: '대한민국 밤산책',
-    text: '경복궁 별빛야행 축제를 소개하고 홍보하는 웹 사이트 입니다. 게시판 페이지와 마이페이지 제작을 담당하였으며, React, MySQL을 사용하여 제작하였습니다.',
-    date: '2024.01.01 ~ 2024.02.01',
+    text: '대한민국 밤산책 웹사이트는 경복궁 별빛야행 축제를 소개하고 홍보하기 위해 제작된 웹 사이트 입니다. Three.js를 활용해 경복궁의 아름다움을 3D로 체험할 수 있고, 애니메이션 효과로 사용자의 가독성을 높일 수 있도록 제작하였습니다. 또한, 로그인을 통해 유사한 축제를 검색하고 좋아요 버튼을 이용해 관심 있는 축제를 쉽게 저장할 수 있습니다.',
+    date: '2024.05.15 ~ 2024.06.18',
     bgImg: 'assets/festival.avif',
-    video: festival,
     btn1: 'go site',
     btn1Img: site,
     btn1Link: 'https://keumju.github.io/bandifesta/',
@@ -38,13 +36,28 @@ export const projectDatas = [{
     btn3Img: git,
     btn3Link: 'https://github.com/keumju/bandifesta.git'
 }, {
+    class: 'Math',
+    siteName: 'CATCH MATH MONSTERS',
+    teamName: "Team M&m's",
+    text: '캐치 수학 몬스터 웹사이트는 초등학교 5학년 학생을 대상으로 재미있고 몰입감 있게 수학을 배울 수 있도록 캐릭터와 스토리가 결합된 학습 플랫폼입니다. 각 학습 단계는 수학 개념을 자연스럽게 습득할 수 있도록 설계 되었고, 직관적이고 사용하기 쉬운 인터페이스로 제작하였습니다.',
+    date: '2024.07.06 ~ 2024.08.07',
+    bgImg: 'assets/book.jpg',
+    btn1: 'go site',
+    btn1Img: site,
+    btn1Link: '',
+    btn2: 'figma',
+    btn2Img: figma,
+    btn2Link: 'https://www.figma.com/design/aJgJdCZVHVoLsfcQaU3ow3/%EC%BA%90%EC%B9%98!-%EC%88%98%ED%95%99-%EB%AA%AC%EC%8A%A4%ED%84%B0?node-id=0-1&m=dev&t=1sCZ9sbTsP5ATVWV-1',
+    btn3: 'github',
+    btn3Img: git,
+    btn3Link: ''
+}, {
     class: 'Gcova',
     siteName: 'GCOVA SITE RENEWAL',
-    teamName: '지코바 사이트 리뉴얼 (개인)',
-    text: '지코바 치킨 브랜드의 홈페이지를 리뉴얼한 웹 사이트입니다. 개인프로젝트로 진행하였으며, HTML, CSS, JavaScript를 사용하여 제작하였습니다.',
-    date: '2024.01.01 ~ 2024.02.01',
+    teamName: '지코바 사이트 리뉴얼',
+    text: '지코바 브랜드의 리뉴얼 사이트는 창업을 고민하는 사용자들을 위해 가독성을 우선으로 한 디자인으로 재구성했습니다. 직관적인 인터페이스와 사용자 친호적인 네비게이션을 통해 브랜드 정보를 쉽고 빠르게 접근할 수 있도록 구현하였습니다.',
+    date: '2024.03.26 ~ 2024.04.09',
     bgImg: 'assets/gcova.jpg',
-    video: 'assets/festival.avif',
     btn1: 'go site',
     btn1Img: site,
     btn1Link: 'https://keumju.github.io/gcova_renewal/',
@@ -57,11 +70,10 @@ export const projectDatas = [{
 }, {
     class: 'Front',
     siteName: 'FRONTEND DICTIONARY',
-    teamName: '프론트엔드사전 (개인)',
-    text: '프론트엔드에서 사용되는 단어들을 쉽게 찾을 수 있도록 제작한 사전입니다. 개인프로젝트로 진행하였으며, React를 사용하였습니다. CRUD 모두 가능하도록 제작하였습니다.',
-    date: '2024.01.01 ~ 2024.02.01',
+    teamName: '프론트엔드사전',
+    text: '프론트엔드에서 사용되는 단어들을 사전처럼 관리하기 위해 CRUD 기능을 적용하여 단어 관리 시스템을 구현했습니다. 사용자는 단어를 추가, 수정, 삭제, 조회할 수 있으며, 직관적인 인터페이스를 통해 손쉽게 단어 정보를 관리 할 수 있도록 하였습니다.',
+    date: '2024.0 ~ 2024.0',
     bgImg: 'assets/frontend.jpg',
-    video: 'assets/festival.avif',
     btn1: 'go site',
     btn1Img: site,
     btn1Link: 'https://keumju.github.io/frontend_dictionary/',
@@ -71,29 +83,13 @@ export const projectDatas = [{
     btn3: 'github',
     btn3Img: git,
     btn3Link: 'https://github.com/keumju/frontend_dictionary.git'
-}, {
-    class: 'Math',
-    siteName: 'CATCH MATH MONSTERS',
-    teamName: "Team M&m's",
-    text: '현재 진행중인 프로젝트입니다. 더 좋은 결과를 위해 꾸준히 업로드 중입니다.',
-    date: '2024.07 ~ (진행중)',
-    bgImg: 'assets/book.jpg',
-    video: 'assets/festival.avif',
-    btn1: 'go site',
-    btn1Img: site,
-    btn1Link: '',
-    btn2: 'figma',
-    btn2Img: figma,
-    btn2Link: 'https://www.figma.com/design/aJgJdCZVHVoLsfcQaU3ow3/%EC%BA%90%EC%B9%98!-%EC%88%98%ED%95%99-%EB%AA%AC%EC%8A%A4%ED%84%B0?node-id=0-1&m=dev&t=1sCZ9sbTsP5ATVWV-1',
-    btn3: 'github',
-    btn3Img: git,
-    btn3Link: ''
+
 }, {
     class: 'Port',
     siteName: 'Portfolio',
     teamName: "포트폴리오",
-    text: 'gsap, Lenis를 사용하여 동적인 효과를 적용한 사이트 입니다.',
-    date: '2024년도',
+    text: '현재 사이트는 제작된 프로젝트가 돋보일 수 있도록 설계된 사이트입니다. GSAP과 Lenis를 활용하여 동적이고 시각적으로 매력적이게 제작하였습니다.',
+    date: '2024.06.18 ~ 2024.07.04',
     bgImg: 'assets/port.jpg',
     btn1: 'go site',
     btn1Img: site,
@@ -106,6 +102,17 @@ export const projectDatas = [{
     btn3Link: ''
 }];
 
+export const toyData = [{
+    tit : 'To-do List',
+    subTit : '투두리스트',
+    bgImg : 'assets/toybg.jpg',
+    btn1: 'go site',
+    btn1Img: site,
+    btn1Link: '',
+    btn3: 'github',
+    btn3Img: git,
+    btn3Link: ''
+}]
 
 export const cloneDatas = [{
     class : 'domino',

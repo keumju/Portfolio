@@ -6,45 +6,62 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import {cloneDatas} from '../../data'
 
 const Clone = ()=>{
-    
-    const horizontalRef = useRef(null);
-    const sectionRef = useRef([]);
+    const cloneRef = useRef(null);
+    const cloneTitleRef1 = useRef(null);
+    const cloneTitleRef2 = useRef(null);
 
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
+    
+        const cloneWrap = cloneRef.current;
+        const cloneTitle1 = cloneTitleRef1.current;
+        const cloneTitle2 = cloneTitleRef2.current;
+        
+        let ctx = gsap.context(()=>{
+            let toyTl = gsap.timeline();
 
-        const horizontal = horizontalRef.current;
-        const sections = sectionRef.current;
-
-        let scrollTween = gsap.to(sections, {
-            xPercent: -120 * (sections.length - 1),
-            ease: "none",
-            scrollTrigger: {
-                trigger: horizontal,
-                start: "top 56px",
-                end: () => "+=" + horizontal.offsetWidth,
-                pin: true,
-                scrub: 1,
-                markers: false,
-                invalidateOnRefresh: true,
-                anticipatePin: 1,
-            }
+            toyTl.fromTo(cloneTitle1,{x: -500},{
+                x: 0,
+                color: "#fff",
+                scrollTrigger: {
+                    trigger: cloneWrap,
+                    start: "-10% top",
+                    end: "top 10%",
+                    scrub: 1,
+                    markers: false
+                }
+            })
+            toyTl.fromTo(cloneTitle2,{x: 500},{
+                x: 0,
+                color: "#fff",
+                scrollTrigger: {
+                    trigger: cloneWrap,
+                    start: "-10% top",
+                    end: "top 10%",
+                    scrub: 1,
+                    markers: false
+                }
+            })
+                
         })
-
-        return () => {
-            scrollTween.kill();
-        };
     }, []);
 
 
     return(
-    <div id='CLONE' className='Clone'>
-        <div className="CloneWrap"  ref={horizontalRef}>
-            <h1 className="CloneTitle">Clone Project</h1>
+    <div className='Clone' ref={cloneRef}>
+        <div className="CloneWrap">
+            <div>
+                <div className="ProjectTitleWrap cloneTitWrap">
+                    <div>
+                        <h1 className="ProjectTitle1" ref={cloneTitleRef1}>Clone</h1>
+                        <h1 className="ProjectTitle2" ref={cloneTitleRef2}>Projects</h1>
+                    </div>
+                </div>
+            </div>
             <div className='CloneInfo'>
                 {cloneDatas.map((data, key)=>{
                     return(
-                    <ul className={`CloneSite ${data.class}`} key={key} ref={(el) => (sectionRef.current[key] = el)}>
+                    <ul className={`CloneSite ${data.class}`} key={key}>
                         <li className="CloneNum">0{key+1}</li>
                         <li className="CloneImg" style={{backgroundImage : `url(${data.img})`}}>
                             <Button name={data.btn1} link={data.link} img={data.btn1Img}/>

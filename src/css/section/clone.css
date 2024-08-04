@@ -1,92 +1,49 @@
 /* section5 : clone */
 .Clone{
-    width: 100%;
-    margin-top: 30vh;
+    width: 100%; height: 400vh;
 }
-.CloneWrap{
-    padding: 16px;
-}
-.CloneTitle{
-    width: 100%;
-    height: 5vw;
-    padding-left: var(--sec-padding-left);
-    font-family: "Playfair Display";
-    /* padding: 25.63vw 0 7.68vw; */
-    font-size: var(--main-tit-font2);
-    /* margin-top: 10vw; */
-    margin-bottom: 16px;
-    text-indent: -0.26vw;
-}
-.CloneInfo{
+ .CloneWrap>div{
+    width: 100%; height: 100%;
+    position: sticky;
+    left: 0; top: 0;
     display: flex;
-    padding-left: 45vw;
-    width: 4000px;
+    justify-content: center;
+ }
+.CloneInfo{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10%;
 }
 .CloneSite{
-    width: 30%;
-    height: 80vh;
+    width: 45%; height: 44vw;
     background-color: var(--black-color);
-    padding: 1rem 2.5rem;
-    margin-right: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
+    border: 1px solid var(--white-color);
+    border-radius: 0.4rem;
+    padding: 2rem;
 }
 .CloneNum{
-    width: 100%;
     font-size: var(--main-tit-font2);
     color: var(--white-color);
-    font-family: "Playfair Display";
 }
 .CloneImg{
     width: 100%; height: 70%;
+    margin-top: -20px;
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position: center center;
-    transition: all 0.3s;
+    border-radius: 0.4rem;
     display: flex;
     align-items: end;
     justify-content: end;
-    gap: 5px;
-    padding: 15px;
-}
-.CloneTit{
-    font-size: var(--tit-pink-font);
-    color: var(--point-color);
-    text-align: center;
-}
-.CloneTxt{
-    font-size: var(--sub-txt-font);
-    color: var(--white-color);
-}
-
-/* .CloneInfo{
-    display: flex;
-    flex-wrap: wrap;
-    width: 0px;
-    padding-left: 45vw;
-}
-.CloneSite{
-    width: 600px;
-    height: 70vh;
-    background-color: var(--black-color);
-    padding: 2.5rem;
-    margin-right: 20px;
-}
-.CloneImg{
-    display: block;
-    width: 29.25vw;
-    height: 31.85vw;
-    background-repeat: no-repeat;
-    background-size: cover;
+    gap: 2%;
+    padding: 2rem;
 }
 .CloneTit, .CloneTxt{
     font-size: 1.04vw;
     margin-top: 0.83vw;
     color: var(--white-color);
-} */
-/* .CloneWrap{
+}
+.CloneWrap{
     position: absolute;
     left: 50%;
     width: 100%; height: auto;
@@ -98,28 +55,17 @@
 }
 
 .domino{
-    transform: translate(-55%,0%);
+    transform: translate(-10%,0%);
 }
 .socar{
-    transform: translate(55%,-40%);
+    transform: translate(10%,-40%);
 }
 .gongju{
-    transform: translate(-55%,-65%);
+    transform: translate(-10%,10%);
 }
 .bizcar{
-    transform: translate(55%,-110%);
+    transform: translate(10%,-30%);
 }
 .ktg{
     transform: translate(-55%, -125%);
 }
-.CloneImg{
-    display: block;
-    width: 29.25vw;
-    height: 31.85vw;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.CloneTit, .CloneTxt{
-    font-size: 1.04vw;
-    margin-top: 0.83vw;
-} */

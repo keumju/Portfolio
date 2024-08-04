@@ -76,12 +76,14 @@
     }
     .AboutLeft{
         width: 100%;
-        z-index: -1;
+        /* z-index: -1; */
         background-attachment: fixed;
+        background-position: center;
     }
     .AboutRight{
         background-color: var(--white-color);
         width: 100%;
+        z-index: 1;
     }
     .AboutTit{
         line-height: 8.67vw;
@@ -94,3 +96,5 @@
         width: 3.03vw;
     }
 }
+
+/* skill page */

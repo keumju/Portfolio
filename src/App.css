@@ -10,6 +10,7 @@ html{
 }
 body {
     font-family: 'Pretendard-Regular', sans-serif;
+    min-width: 360px;
 }
 *{
     margin: 0;

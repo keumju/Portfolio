@@ -1,32 +1,108 @@
 /* section4 : toy */
-.sec4Tit{
-    padding: 40.63vw 5.5vw 15.68vw;
-    font-size: 3.65vw;
-    font-family: "Playfair Display";
-    text-align: end;
-}
-/* Todo */
 .Toy{
-    width: 90%;
-    margin-left: 5%;
-    padding-bottom: 50px;
-    padding-top: 15px;
-    display: flex;
-    flex-wrap: wrap;
+    width: 100%;
+    overflow: hidden;
 }
-.ToyInfo{
-    width: calc(50% - 10px);
-    height: 55vh;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    background-color: var(--black-color);
+.Toy>div{
+    width: 200vw;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    position: relative;
+}
+.Toy>div>div{
+    /* width: 100vw; height: 100vh; */
+}
+.ToyWrap{
+    width: 100vw; height: 100vh;
+    position: absolute;
+    top: 0; right: 0;
+}
+.toyTxtWrap{
+    width: calc(100vw - 20px); height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.toyBar{
+    position: absolute;
+    right: 0; top: 0;
+    width: 20px; height: 100vh;
+    background-color: var(--point-color);
+}
+
+@keyframes rotate {
+  0% {
+      transform: perspective(400px) rotateZ(20deg) rotateX(-40deg) rotateY(0);
+  }
+  100% {
+      transform: perspective(400px) rotateZ(20deg) rotateX(-40deg) rotateY(-360deg);
+  }
+}
+.sta{
+    width: 100%; height: 100%;
+    position: absolute;
+    background-attachment: fixed;
+    color: var(--white-color);
+    /* overflow: hidden; */
+}
+.stars {
+    transform: perspective(500px);
+    transform-style: preserve-3d;
+    position: absolute;
+    bottom: 0;
+    perspective-origin: 50% 100%;
+    left: 50%;
+    animation: rotate 90s infinite linear;
+}
+.star {
+    width: 2px;
+    height: 2px;
+    background: #F7F7B6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: 0 0 -300px;
+    transform: translate3d(0, 0, -300px);
+    backface-visibility: hidden;
+}
+.starTit{
+    width: 100vw; height: 100%;
+    overflow: hidden;
+}
+.toyTitWrap{
+    position: absolute;
+}
+.toyTitWrap h1{
     color: var(--white-color);
 }
+.ToyInfo{
+    width: 100vw; height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    position: relative;
+}
+
+.ToyInfo::after{
+    content: '';
+    width: 100%; height: 100%;
+    display: block;
+    position: absolute;
+    left: 0; top: 0;
+    background-color:rgba(0,0,0,0.5);
+}
+.ToyInfo>li{
+    z-index: 1;
+}
 .ToyTitle{
+    font-size: var(--main-tit-font);
+    font-family: "Playfair Display";
+    color: var(--white-color);
+    padding-bottom: 1%;
+}
+/* .ToyTitle{
     font-size: 2.65vw;
     margin-top: 1vw;
     font-weight: 600;
@@ -35,8 +111,8 @@
     font-size: 1.04vw;
     color: var(--point-color);
     margin: 1vw 0;
-}
-.ToyText, .ToyDate{
+} */
+/* .ToyText, .ToyDate{
     width: 50%;
     text-align: center;
     font-size: 0.94vw;
@@ -46,35 +122,4 @@
     background-color: purple;
     height: 55vh;
     width: calc(50% - 10px);
-}
-.ToyBtn{
-    background-color: var(--black-color);
-    width: 100%;
-    height: 55vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.ToyBtn>h2{
-    color: var(--white-color);
-    font-size: 2.65vw;
-    font-family: "Playfair Display";
-}
-
-.todoBtn{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 1%;
-    margin-top: 2%;
-}
-.todoBtn>.button>a{
-    display: inline-block;
-    transition: all 0.5s;
-    height: 80px;
-    min-width: 80px;
-    line-height: 80px;
-    font-size: 0.8vw;
-    font-weight: 600;
-}
+} */

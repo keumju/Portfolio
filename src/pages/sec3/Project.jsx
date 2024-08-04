@@ -8,37 +8,47 @@ import Button from '../../components/Button';
 
 const Project = () => { 
 
-    const proTitleRef = useRef(null);
+    const proTitleRef1 = useRef(null);
+    const proTitleRef2 = useRef(null);
     const proRef = useRef(null);
 
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
     
-        const proTitle = proTitleRef.current;
+        const proTitle1 = proTitleRef1.current;
+        const proTitle2 = proTitleRef2.current;
         const proWrap = proRef.current;
     
-        let scrollAbout = gsap.fromTo(proTitle,{
-            y: 100
-        },{
-            y: 0,
-          scrollTrigger: {
-            trigger: proWrap,
-            start: "-20% top",
-            end: "top 10%",
-            scrub: 1,
-            markers: false
-          }
+        let ctx = gsap.context(()=>{
+            gsap.fromTo(proTitle1,{x: -300},{
+                x: 0,
+                scrollTrigger: {
+                    trigger: proWrap,
+                    start: "-10% top",
+                    end: "top 10%",
+                    scrub: 1,
+                    markers: false
+                }
+            })
+            gsap.fromTo(proTitle2,{x: 300},{
+                x: 0,
+                scrollTrigger: {
+                    trigger: proWrap,
+                    start: "-10% top",
+                    end: "top 10%",
+                    scrub: 1,
+                    markers: false
+                }
+            })
         })
-        return () => {
-            scrollAbout.kill();
-        };
       }, []);
 
     return (
-        <div id="PROJECT" className='Project'>
-            <div className="ProjectTitleWrap" ref={proRef}>
+        <div id="PROJECT" className='Project' ref={proRef}>
+            <div className="ProjectTitleWrap proTitWrap">
                 <div>
-                    <h1 className="ProjectTitle" ref={proTitleRef}>My Projects Story</h1>
+                    <h1 className="ProjectTitle1" ref={proTitleRef1}>Projects</h1>
+                    <h1 className="ProjectTitle2" ref={proTitleRef2}>Story</h1>
                 </div>
             </div>
             {projectDatas.map((data) =>
