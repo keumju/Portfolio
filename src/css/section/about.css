@@ -98,3 +98,31 @@
 }
 
 /* skill page */
+.AboutInfo4{
+    width: 90%;
+}
+.skillWrap{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.skillWrap>li{
+    width: 85%;
+    display: flex;
+    padding: 2vw;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid hsla(0,0%,57%,.2);
+    border-radius: 20px;
+}
+.skillWrap>li>h2{
+    width: 15%;
+    text-align: center;
+}
+.skillWrap>li>img{
+    height: 3vw;
+}
+.skillWrap>li>img:hover{
+    transform: translateY(-5px);
+    transition: 0.3s;
+}

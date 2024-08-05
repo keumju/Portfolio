@@ -69,3 +69,10 @@
 .ktg{
     transform: translate(-55%, -125%);
 }
+.CloneBtn{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+    padding-top: 10px;
+}

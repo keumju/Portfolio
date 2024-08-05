@@ -102,6 +102,9 @@ nav{
     content: 'PROJECT';   
 }
 .navInfo>li:nth-child(3)>a::after{
+    content: 'TOY';   
+}
+.navInfo>li:nth-child(4)>a::after{
     content: 'CLONE';   
 }
 .navInfo>li>a::after{

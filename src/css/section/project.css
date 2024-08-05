@@ -73,3 +73,12 @@
     font-size: var(--sub-txt-font);
     text-align: center;
 } 
+.Front .btnWrap>button:nth-child(3){
+    display: none;
+}
+.Front .btnWrap>button:nth-child(4){
+    display: none;
+}
+.Port .btnWrap>button:nth-child(4){
+    display: none;
+}

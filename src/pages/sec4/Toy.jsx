@@ -42,7 +42,7 @@ const Toy = ()=>{
 
 
     return(
-    <div className="Toy"  ref={toyRef}>
+    <div id="TOY" className="Toy"  ref={toyRef}>
         <div ref={horizontalRef}>
             <div ref={(el) => (sectionRef.current[0] = el)}>
                 <ToyTitle/>

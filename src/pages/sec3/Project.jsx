@@ -5,6 +5,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { projectDatas } from "../../data";
 
 import Button from '../../components/Button';
+import Button2 from '../../components/Button2';
 
 const Project = () => { 
 
@@ -62,6 +63,7 @@ const Project = () => {
                             <Button name={data.btn1} link={data.btn1Link} img={data.btn1Img} />
                             <Button name={data.btn3} link={data.btn3Link} img={data.btn3Img} />
                             <Button name={data.btn2} link={data.btn2Link} img={data.btn2Img} />
+                            <Button2 name={data.btn4} link={data.btn4Link} img={data.btn4Img} />
                         </li>
                     </ul>
                 </div>

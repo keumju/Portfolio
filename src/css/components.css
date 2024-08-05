@@ -24,7 +24,7 @@
 /* button */
 .btnWrap{
     display: flex;
-    gap: 2%;
+    gap: 5px;
 }
 .button{
     background-color: #E1E6E9;
@@ -40,9 +40,9 @@
 .button>a{
     display: inline-block;
     transition: all 0.5s;
-    height: 50px;
-    min-width: 50px;
-    line-height: 50px;
+    height: 70px;
+    min-width: 70px;
+    line-height: 70px;
     font-size: 0.5vw;
     font-weight: 600;
 }

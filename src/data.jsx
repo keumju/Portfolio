@@ -1,6 +1,7 @@
 import site from '../public/assets/web.png'
 import figma from '../public/assets/figma.png'
 import git from '../public/assets/git2.png'
+import proposal from '../public/assets/proposal.png'
 
 export const headerNav = [{
         title: "ABOUT",
@@ -9,10 +10,10 @@ export const headerNav = [{
         title: "PROJECT",
         url: "#PROJECT"
     },
-    // {
-    //     title: "TOY",
-    //     url: "#TOY"
-    // },
+    {
+        title: "TOY",
+        url: "#TOY"
+    },
     {
         title: "CLONE",
         url: "#CLONE"
@@ -34,7 +35,10 @@ export const projectDatas = [{
     btn2Link: 'https://www.figma.com/design/4hKjaZEbRsl1pGeaUSQKjY/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD-%EB%B0%A4%EC%82%B0%EC%B1%85?node-id=0-1&m=dev&t=WdWtFrFXJUalo6Vu-1',
     btn3: 'github',
     btn3Img: git,
-    btn3Link: 'https://github.com/keumju/bandifesta.git'
+    btn3Link: 'https://github.com/keumju/bandifesta.git',
+    btn4: 'proposal',
+    btn4Img: proposal,
+    btn4Link: ''
 }, {
     class: 'Math',
     siteName: 'CATCH MATH MONSTERS',
@@ -50,7 +54,10 @@ export const projectDatas = [{
     btn2Link: 'https://www.figma.com/design/aJgJdCZVHVoLsfcQaU3ow3/%EC%BA%90%EC%B9%98!-%EC%88%98%ED%95%99-%EB%AA%AC%EC%8A%A4%ED%84%B0?node-id=0-1&m=dev&t=1sCZ9sbTsP5ATVWV-1',
     btn3: 'github',
     btn3Img: git,
-    btn3Link: ''
+    btn3Link: '',
+    btn4: 'proposal',
+    btn4Img: proposal,
+    btn4Link: ''
 }, {
     class: 'Gcova',
     siteName: 'GCOVA SITE RENEWAL',
@@ -66,13 +73,16 @@ export const projectDatas = [{
     btn2Link: 'https://www.figma.com/design/FvEC1kUoUrefm3llM6to8z/%EC%A7%80%EC%BD%94%EB%B0%94?node-id=0-1&m=dev&t=CuAFDPH6ffkEidxB-1',
     btn3: 'github',
     btn3Img: git,
-    btn3Link: 'https://github.com/keumju/gcova_renewal.git'
+    btn3Link: 'https://github.com/keumju/gcova_renewal.git',
+    btn4: 'proposal',
+    btn4Img: proposal,
+    btn4Link: ''
 }, {
     class: 'Front',
     siteName: 'FRONTEND DICTIONARY',
     teamName: '프론트엔드사전',
     text: '프론트엔드에서 사용되는 단어들을 사전처럼 관리하기 위해 CRUD 기능을 적용하여 단어 관리 시스템을 구현했습니다. 사용자는 단어를 추가, 수정, 삭제, 조회할 수 있으며, 직관적인 인터페이스를 통해 손쉽게 단어 정보를 관리 할 수 있도록 하였습니다.',
-    date: '2024.0 ~ 2024.0',
+    date: '2024.05.06 ~ 2024.05.10',
     bgImg: 'assets/frontend.jpg',
     btn1: 'go site',
     btn1Img: site,
