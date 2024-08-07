@@ -34,7 +34,7 @@ const Toy = ()=>{
                     anticipatePin: 1,
                 }
             })
-    
+            console.log(horizontal.offsetWidth)
             return () => {
                 scrollTween.kill();
             };

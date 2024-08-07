@@ -44,7 +44,7 @@ nav{
     white-space: nowrap;
 }
 .navR .navContact>p::after{
-    content: "LET'S TALK";
+    content: "Contact Me";
     display: block;
     position: absolute;
     top: 0; left: 0;

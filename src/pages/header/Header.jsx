@@ -36,7 +36,7 @@ const Header = ()=>{
                     </>
                     :
                     <>
-                        <p>LET'S TALK</p>
+                        <p>Contact Me</p>
                         <div>
                             <p>+</p>
                         </div>
@@ -64,7 +64,7 @@ const Header = ()=>{
                         <div>
                             <p>+</p>
                         </div>
-                        <p>LET'S TALK</p>
+                        <p>Contact Me</p>
                     </div>
                 </div>
                 <ul className='subMyInfo'>
