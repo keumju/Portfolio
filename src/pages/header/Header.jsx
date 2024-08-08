@@ -80,7 +80,7 @@ const Header = ()=>{
                                 <div>
                                     <p>+</p>
                                 </div>
-                                <p>Contact Me</p>
+                                <p>Let's Talk</p>
                             </div>
                         </div>
                     </div>
