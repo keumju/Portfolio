@@ -4,30 +4,13 @@
     overflow: hidden;
 }
 .Toy>div{
-    width: 200vw;
     display: flex;
-    position: relative;
-}
-.Toy>div>div{
-    /* width: 100vw; height: 100vh; */
-}
-.ToyWrap{
-    width: 100vw; height: 100vh;
-    position: absolute;
-    top: 0; right: 0;
 }
 .toyTxtWrap{
     width: calc(100vw - 20px); height: 100vh;
     position: relative;
     overflow: hidden;
 }
-.toyBar{
-    position: absolute;
-    right: 0; top: 0;
-    width: 20px; height: 100vh;
-    background-color: var(--point-color);
-}
-
 @keyframes rotate {
   0% {
       transform: perspective(400px) rotateZ(20deg) rotateX(-40deg) rotateY(0);
@@ -41,7 +24,6 @@
     position: absolute;
     background-attachment: fixed;
     color: var(--white-color);
-    /* overflow: hidden; */
 }
 .stars {
     transform: perspective(500px);
@@ -73,53 +55,36 @@
 .toyTitWrap h1{
     color: var(--white-color);
 }
+
 .ToyInfo{
     width: 100vw; height: 100vh;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
-    position: relative;
-}
-
-.ToyInfo::after{
-    content: '';
-    width: 100%; height: 100%;
-    display: block;
-    position: absolute;
-    left: 0; top: 0;
-    background-color:rgba(0,0,0,0.5);
+    border-left: 30px solid var(--point-color);
 }
 .ToyInfo>li{
+    flex: 1;
     z-index: 1;
 }
+.ToyImg{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 .ToyTitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--txt-gap);
+    padding-left: 50px;
+}
+.ToyTitle>p{
     font-size: var(--main-tit-font);
     font-family: "Playfair Display";
     color: var(--white-color);
-    padding-bottom: 1%;
 }
-/* .ToyTitle{
-    font-size: 2.65vw;
-    margin-top: 1vw;
-    font-weight: 600;
+.ToyTitle>span{
+    width: 70%;
+    font-size: var(--sub-txt-font);
+    font-family: "Playfair Display";
+    color: var(--white-color);
 }
-.ToySubTitle{
-    font-size: 1.04vw;
-    color: var(--point-color);
-    margin: 1vw 0;
-} */
-/* .ToyText, .ToyDate{
-    width: 50%;
-    text-align: center;
-    font-size: 0.94vw;
-    margin-bottom: 1vw;
-}
-.ToyImg{
-    background-color: purple;
-    height: 55vh;
-    width: calc(50% - 10px);
-} */

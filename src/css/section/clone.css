@@ -3,7 +3,8 @@
     width: 100%; height: 400vh;
 }
  .CloneWrap>div{
-    width: 100%; height: 100%;
+    width: 100%; 
+    height: 100%;
     position: sticky;
     left: 0; top: 0;
     display: flex;
@@ -16,33 +17,58 @@
     margin-top: 10%;
 }
 .CloneSite{
-    width: 45%; height: 44vw;
+    width: 38%; 
+    /* height: 80vh; */
     background-color: var(--black-color);
     border: 1px solid var(--white-color);
     border-radius: 0.4rem;
     padding: 2rem;
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .CloneNum{
+    width: 100%;
     font-size: var(--main-tit-font2);
     color: var(--white-color);
 }
 .CloneImg{
-    width: 100%; height: 70%;
-    margin-top: -20px;
+    width: 100%;
     background-repeat: no-repeat;
     background-size: 100%;
     border-radius: 0.4rem;
     display: flex;
     align-items: end;
     justify-content: end;
-    gap: 2%;
-    padding: 2rem;
+    margin-bottom: var(--txt-gap);;
 }
-.CloneTit, .CloneTxt{
-    font-size: 1.04vw;
-    margin-top: 0.83vw;
+.CloneImg>img{
+    width: 100%;
+}
+.CloneBtn{
+    width: 100%;
+    justify-content: end;
+}
+
+
+
+
+
+
+.CloneTit{
+    /* font-size: max(1rem, 2vw); */
+    width: 100%;
+    font-size: var(--main-txt-font);
+    /* margin-top: 0.83vw; */
     color: var(--white-color);
 }
+
+
+
+
+
 .CloneWrap{
     position: absolute;
     left: 50%;
@@ -55,24 +81,22 @@
 }
 
 .domino{
-    transform: translate(-10%,0%);
+    transform: translate(-10%,-40%);
 }
 .socar{
-    transform: translate(10%,-40%);
+    transform: translate(10%,0);
 }
 .gongju{
-    transform: translate(-10%,10%);
+    transform: translate(-10%,-30%);
 }
 .bizcar{
-    transform: translate(10%,-30%);
+    transform: translate(10%,10%);
 }
 .ktg{
-    transform: translate(-55%, -125%);
+    transform: translate(-60%, -20%);
+    margin-bottom: 80vh;
 }
-.CloneBtn{
-    width: 100%;
-    display: flex;
-    gap: 10px;
-    justify-content: end;
-    padding-top: 10px;
-}
+/* .CloneBtn{
+    position: absolute;
+    bottom: 1.5%; right: 1.5%;
+} */

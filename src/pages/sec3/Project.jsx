@@ -57,8 +57,8 @@ const Project = () => {
                     <ul className='ProWrap'>
                         <li className="ProTitle"><p>{data.siteName}</p></li>
                         <li className="ProTeam"><p>{data.teamName}</p></li>
-                        <li className="ProText"><p>{data.text}</p></li>
                         <li className="ProDate"><p>{data.date}</p></li>
+                        <li className="ProText"><p>{data.text}</p></li>
                         <li className='btnWrap'>
                             <Button name={data.btn1} link={data.btn1Link} img={data.btn1Img} />
                             <Button name={data.btn3} link={data.btn3Link} img={data.btn3Img} />

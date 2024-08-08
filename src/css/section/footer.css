@@ -6,6 +6,7 @@ footer{
     align-items: center;
     position: relative;
     overflow: hidden;
+    margin-top: 90vh;
 }
 footer>ul{
     padding-bottom: 190px;
@@ -15,7 +16,7 @@ footer>ul{
     font-size: var(--main-tit-font);
     font-weight: 600;
     color: var(--main-color);
-    padding-bottom: var(--mediun-gap);
+    padding-bottom: 1vw;
 }
 .footTxt{
     font-size: var(--main-txt-font);
@@ -25,10 +26,11 @@ footer>ul{
     font-weight: 600;
 }
 .footBgtxt{
-    font-size: 300px;
+    font-size: 18vw;
     font-style: italic;
     color: var(--main-color);
     opacity: 20%;
     position: absolute;
-    bottom: -4%;
+    bottom: -10%;
+    left: -2%;
 }

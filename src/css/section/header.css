@@ -186,6 +186,9 @@ nav{
 .subNav>div>p{
     font-size: max(9vw, 4.09722vw);
 }
+.subNavContactWrap{
+    display: inline-block;
+}
 .subNavContact{
     cursor: pointer;
     display: flex;
@@ -211,7 +214,6 @@ nav{
     width: 100%; height: 100%;
     position: absolute;
     top: 0; left: 0;
-    /* z-index: -1; */
     transform-origin: top left;
     transform: scale(0) rotate(-45deg);
     transition: transform 0.8s cubic-bezier(.22,1,.36,1);
@@ -324,4 +326,61 @@ nav{
     .subNav{
         width: 80.73333vw;
     }
+}
+
+
+
+
+/* mail */
+.emailWrap{
+    width: 100%; height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mailForm{
+    width: 60%;
+    background-color: #eeede9;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px;
+    border-radius: 0.4rem;
+}
+.mailForm>div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.mailForm>div>label{
+    display: block;
+    color: #929292;
+    font-size: 2.6rem;
+    letter-spacing: -0.025em;
+    font-weight: bold;
+}
+.mailForm>div>input{
+    display: block;
+    width: 100%;
+    border-radius: 0.4rem;
+    color: var(--black-color);
+    font-size: var(--main-txt-font);
+    padding: 10px;
+    border: 1px solid #929292;
+    background-color: #eeede9;
+}
+.mailForm>div>textarea{
+    display: block;
+    width: 100%; height: 200px;
+    border-radius: 0.4rem;
+    color: var(--black-color);
+    font-size: var(--main-txt-font);
+    padding: 10px;
+    border: 1px solid #929292;
+    background-color: #eeede9;
+}
+.mailBtn{
+    width: 100px;
+    padding: 1rem;
+    font-weight: bold;
 }

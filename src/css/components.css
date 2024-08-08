@@ -24,7 +24,7 @@
 /* button */
 .btnWrap{
     display: flex;
-    gap: 5px;
+    gap: 10px;
 }
 .button{
     background-color: #E1E6E9;
@@ -65,7 +65,7 @@
     transition: all 0.5s;
 }
 .button span{
-    /* color: var(--point-color); */
+    font-size: max(0.5rem, 0.5vw);
 }
 .button:hover::before{
     top: 0;
@@ -74,3 +74,10 @@
 .button:hover>a{
     transform: translateY(115%);
 }
+
+
+
+
+
+
+

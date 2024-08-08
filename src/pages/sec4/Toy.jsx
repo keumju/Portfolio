@@ -7,7 +7,6 @@ import Button from '../../components/Button';
 import ToyTitle from './ToyTitle'
 
 const Toy = ()=>{
-    const toyRef = useRef(null);
     
     const toyWrapRef = useRef(null);
 
@@ -34,32 +33,31 @@ const Toy = ()=>{
                     anticipatePin: 1,
                 }
             })
-            console.log(horizontal.offsetWidth)
+            // console.log(horizontal.offsetWidth)
             return () => {
                 scrollTween.kill();
             };
         }, []);
 
-
+        
     return(
-    <div id="TOY" className="Toy"  ref={toyRef}>
-        <div ref={horizontalRef}>
+    <div id="TOY" className="Toy" ref={horizontalRef}>
+        <div>
             <div ref={(el) => (sectionRef.current[0] = el)}>
                 <ToyTitle/>
-                <div className="toyBar"></div>
             </div>
             <div className="ToyWrap" ref={toyWrapRef}>
                 {toyData.map((data, id)=>
-                    <ul className="ToyInfo" ref={(el) => (sectionRef.current[id+1] = el)} style={{backgroundImage : `url(${data.bgImg})`}} key={id}>
+                    <ul className="ToyInfo" ref={(el) => (sectionRef.current[id+1] = el)} key={id}>
                         <li className="ToyTitle">
                             <p>{data.tit}</p>
-                        </li>
-                        <li className="toyBtns">
+                            <span>{data.txt}</span>
                             <div className='btnWrap'>
                                 <Button name={data.btn1} link={data.btn1Link} img={data.btn1Img} />
                                 <Button name={data.btn3} link={data.btn3Link} img={data.btn3Img} />
                             </div>
                         </li>
+                        <li className="ToyImg" style={{backgroundImage : `url(${data.bgImg})`}}></li>
                     </ul>
                 )}
             </div>

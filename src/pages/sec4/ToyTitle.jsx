@@ -43,36 +43,36 @@ function ToyTitle(){
         })
         }, []);
 
-    useEffect(() => {
-        const stars = 800;
-    
-        const generateRandomNumber = (min, max) => {
-          return Math.random() * (max - min) + min;
-        };
-    
-        const $stars = document.querySelector(".stars");
-        const r = 800;
-    
-        for (let i = 0; i < stars; i++) {
-          const $star = document.createElement("div");
-          $star.classList.add("star");
-          $stars.appendChild($star);
-        }
-    
-        const starElements = document.querySelectorAll(".star");
-        starElements.forEach((cur) => {
-          const s = 0.2 + (Math.random() * 1);
-          const curR = r + (Math.random() * 300);
-          cur.style.transformOrigin = `0 0 ${curR}px`;
-          cur.style.transform = `translate3d(0,0,-${curR}px) rotateY(${generateRandomNumber(0, 360)}deg) rotateX(${generateRandomNumber(-50, 0)}deg) scale(${s},${s})`;
-        });
-    
-        // 클린업 함수
-        return () => {
-          $stars.innerHTML = ''; // 컴포넌트가 언마운트될 때 모든 별을 제거합니다.
-        };
-      }, []); // 빈 의존성 배열은 useEffect가 한 번만 실행되도록 합니다.
-    
+        useEffect(() => {
+            const stars = 800;
+        
+            const generateRandomNumber = (min, max) => {
+              return Math.random() * (max - min) + min;
+            };
+        
+            const $stars = document.querySelector(".stars");
+            const r = 800;
+        
+            for (let i = 0; i < stars; i++) {
+              const $star = document.createElement("div");
+              $star.classList.add("star");
+              $stars.appendChild($star);
+            }
+        
+            const starElements = document.querySelectorAll(".star");
+            starElements.forEach((cur) => {
+              const s = 0.2 + (Math.random() * 1);
+              const curR = r + (Math.random() * 300);
+              cur.style.transformOrigin = `0 0 ${curR}px`;
+              cur.style.transform = `translate3d(0,0,-${curR}px) rotateY(${generateRandomNumber(0, 360)}deg) rotateX(${generateRandomNumber(-50, 0)}deg) scale(${s},${s})`;
+            });
+        
+            // 클린업 함수
+            return () => {
+              $stars.innerHTML = ''; // 컴포넌트가 언마운트될 때 모든 별을 제거합니다.
+            };
+          }, []); // 빈 의존성 배열은 useEffect가 한 번만 실행되도록 합니다.
+        
     return(
         <div className="toyTxtWrap" ref={toyRef}>
             <div className="sta">

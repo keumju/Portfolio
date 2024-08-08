@@ -1,16 +1,25 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { headerNav } from '../../data';
 
+import Email from './email'
+
 const Header = ()=>{
     let [open, setOpen] = useState(false);
+    let [mail, setMail] = useState(false);
+
     function subOpen(){
         setOpen(open => !open)
+        setMail(false)
+    }
+    function mailOpen(){
+        setMail(e => !e);
     }
     
     const rotate = {
         transfrom : 'rotate(45deg)',
         display : 'block'
     }
+
 
     return(
         <>
@@ -52,35 +61,45 @@ const Header = ()=>{
         </nav>
         <div className='subNavHidden'>
         <div className={open ? 'subNavWrap subNavWrapOpen' : 'subNavWrap'}>
-            <div className={open ? 'subNav subNavOpen' : 'subNav'}>
-                <ul>
-                    {headerNav.map((data, key)=>
-                        <li key={key} onClick={()=>setOpen(false)} className='subList'><a href={data.url}>{data.title}</a></li>
-                    )}
-                </ul>
-                <div>
-                    <p>Contact Me</p>
-                    <div className='subNavContact'>
-                        <div>
-                            <p>+</p>
-                        </div>
-                        <p>Contact Me</p>
-                    </div>
-                </div>
-                <ul className='subMyInfo'>
-                    <li className='contactName'>
-                        김금주
-                    </li>
-                    <li className='contactInfo'>
-                        <img src='assets/birth.svg'/>
-                        <p>010-6388-7821</p>
-                    </li>
-                    <li className='contactInfo'>
-                        <img src='assets/address.svg'/>
-                        <p>goldweek49@naver.com</p>
-                    </li>
-                </ul>
+            {mail ?
+            <div className='emailWrap'>
+                <Email setOpen={setOpen} setMail={setMail}/>
             </div>
+            :
+            <div className={open ? 'subNav subNavOpen' : 'subNav'}>
+                <>
+                    <ul>
+                        {headerNav.map((data, key)=>
+                            <li key={key} onClick={()=>setOpen(false)} className='subList'><a href={data.url}>{data.title}</a></li>
+                        )}
+                    </ul>
+                    <div>
+                        <p>Contact Me</p>
+                        <div className='subNavContactWrap' onClick={()=>setMail(true)}>
+                            <div className='subNavContact'>
+                                <div>
+                                    <p>+</p>
+                                </div>
+                                <p>Contact Me</p>
+                            </div>
+                        </div>
+                    </div>
+                    <ul className='subMyInfo'>
+                        <li className='contactName'>
+                            김금주
+                        </li>
+                        <li className='contactInfo'>
+                            <img src='assets/birth.svg'/>
+                            <p>010-6388-7821</p>
+                        </li>
+                        <li className='contactInfo'>
+                            <img src='assets/address.svg'/>
+                            <p>goldweek49@naver.com</p>
+                        </li>
+                    </ul>
+                </>
+            </div>
+            }
         </div>
         </div>
         </>
