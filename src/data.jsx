@@ -32,13 +32,13 @@ export const projectDatas = [{
     btn1Link: 'https://thesandfox.github.io/bandifesta',
     btn2: 'figma',
     btn2Img: figma,
-    btn2Link: 'https://www.figma.com/design/4hKjaZEbRsl1pGeaUSQKjY/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD-%EB%B0%A4%EC%82%B0%EC%B1%85?node-id=0-1&m=dev&t=WdWtFrFXJUalo6Vu-1',
+    btn2Link: 'https://www.figma.com/design/4hKjaZEbRsl1pGeaUSQKjY/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD-%EB%B0%A4%EC%82%B0%EC%B1%85?node-id=0-1&t=BFLhwfuNx59RzQpg-1',
     btn3: 'github',
     btn3Img: git,
     btn3Link: 'https://github.com/keumju/bandifesta.git',
     btn4: 'proposal',
     btn4Img: proposal,
-    btn4Link: ''
+    btn4Link: 'assets/ppt/festival.pdf'
 }, {
     class: 'Math',
     siteName: 'CATCH MATH MONSTERS',
@@ -48,16 +48,16 @@ export const projectDatas = [{
     bgImg: 'assets/book.jpg',
     btn1: 'go site',
     btn1Img: site,
-    btn1Link: '',
+    btn1Link: 'https://pichiss.github.io/TeamMMs/',
     btn2: 'figma',
     btn2Img: figma,
-    btn2Link: 'https://www.figma.com/design/aJgJdCZVHVoLsfcQaU3ow3/%EC%BA%90%EC%B9%98!-%EC%88%98%ED%95%99-%EB%AA%AC%EC%8A%A4%ED%84%B0?node-id=0-1&m=dev&t=1sCZ9sbTsP5ATVWV-1',
+    btn2Link: 'https://www.figma.com/design/aJgJdCZVHVoLsfcQaU3ow3/%EC%BA%90%EC%B9%98!-%EC%88%98%ED%95%99-%EB%AA%AC%EC%8A%A4%ED%84%B0?node-id=0-1&t=Y4A3Od2wVNTRqzz1-1',
     btn3: 'github',
     btn3Img: git,
-    btn3Link: '',
+    btn3Link: 'https://github.com/keumju/Catch-Math-Monsters.git',
     btn4: 'proposal',
     btn4Img: proposal,
-    btn4Link: ''
+    btn4Link: 'assets/ppt/catch.pdf'
 }, {
     class: 'Gcova',
     siteName: 'GCOVA SITE RENEWAL',
@@ -67,16 +67,16 @@ export const projectDatas = [{
     bgImg: 'assets/gcova.jpg',
     btn1: 'go site',
     btn1Img: site,
-    btn1Link: 'https://keumju.github.io/gcova_renewal/',
+    btn1Link: 'https://keumju.github.io/Gcova_renewal/',
     btn2: 'figma',
     btn2Img: figma,
-    btn2Link: 'https://www.figma.com/design/FvEC1kUoUrefm3llM6to8z/%EC%A7%80%EC%BD%94%EB%B0%94?node-id=0-1&m=dev&t=CuAFDPH6ffkEidxB-1',
+    btn2Link: 'https://www.figma.com/design/FvEC1kUoUrefm3llM6to8z/%EC%A7%80%EC%BD%94%EB%B0%94?node-id=0-1&t=QOIkdxtv2ZA5Wn3L-1',
     btn3: 'github',
     btn3Img: git,
-    btn3Link: 'https://github.com/keumju/gcova_renewal.git',
+    btn3Link: 'https://github.com/keumju/Gcova_renewal.git',
     btn4: 'proposal',
     btn4Img: proposal,
-    btn4Link: ''
+    btn4Link: 'assets/ppt/gcova.pdf'
 }, {
     class: 'Front',
     siteName: 'FRONTEND DICTIONARY',
@@ -94,34 +94,37 @@ export const projectDatas = [{
     btn3Img: git,
     btn3Link: 'https://github.com/keumju/frontend_dictionary.git'
 
-}, {
-    class: 'Port',
-    siteName: 'Portfolio',
-    teamName: "포트폴리오",
-    text: '현재 사이트는 제작된 프로젝트가 돋보일 수 있도록 설계된 사이트입니다. GSAP과 Lenis를 활용하여 동적이고 시각적으로 매력적이게 제작하였습니다.',
-    date: '2024.06.18 ~ 2024.07.04',
-    bgImg: 'assets/port.jpg',
-    btn1: 'go site',
-    btn1Img: site,
-    btn1Link: '',
-    btn2: 'figma',
-    btn2Img: figma,
-    btn2Link: 'https://www.figma.com/design/aJgJdCZVHVoLsfcQaU3ow3/%EC%BA%90%EC%B9%98!-%EC%88%98%ED%95%99-%EB%AA%AC%EC%8A%A4%ED%84%B0?node-id=0-1&m=dev&t=1sCZ9sbTsP5ATVWV-1',
-    btn3: 'github',
-    btn3Img: git,
-    btn3Link: ''
-}];
+},
+//  {
+//     class: 'Port',
+//     siteName: 'Portfolio',
+//     teamName: "포트폴리오",
+//     text: '현재 사이트는 제작된 프로젝트가 돋보일 수 있도록 설계된 사이트입니다. GSAP과 Lenis를 활용하여 동적이고 시각적으로 매력적이게 제작하였습니다.',
+//     date: '2024.06.18 ~ 2024.07.04',
+//     bgImg: 'assets/port.jpg',
+//     btn1: 'go site',
+//     btn1Img: site,
+//     btn1Link: '',
+//     btn2: 'figma',
+//     btn2Img: figma,
+//     btn2Link: 'https://www.figma.com/design/aJgJdCZVHVoLsfcQaU3ow3/%EC%BA%90%EC%B9%98!-%EC%88%98%ED%95%99-%EB%AA%AC%EC%8A%A4%ED%84%B0?node-id=0-1&m=dev&t=1sCZ9sbTsP5ATVWV-1',
+//     btn3: 'github',
+//     btn3Img: git,
+//     btn3Link: ''
+// }
+];
 
 export const toyData = [{
     tit : 'To-do List',
+    txt: 'React 환경에서 제작한 투두리스트 사이트 입니다. CRUD 기능을 이용해 오늘의 할일 작성 및 등록, 수정, 삭제가 가능하도록 제작하였습니다.',
     subTit : '투두리스트',
     bgImg : 'assets/toybg.jpg',
     btn1: 'go site',
     btn1Img: site,
-    btn1Link: '',
+    btn1Link: 'https://keumju.github.io/To-Do-List/',
     btn3: 'github',
     btn3Img: git,
-    btn3Link: ''
+    btn3Link: 'https://github.com/keumju/To-Do-List.git'
 }]
 
 export const cloneDatas = [{
@@ -132,10 +135,10 @@ export const cloneDatas = [{
     txt : 'HTML, CSS, JavaScript를 사용하여 클로닝 사이트를 제작하였습니다.',
     btn1: 'go site',
     btn1Img: site,
-    git : 'https://github.com/keumju/cloning_domino.git',
+    git : 'https://keumju.github.io/cloning_domino/',
     btn3: 'github',
     btn3Img: git,
-    link : 'https://keumju.github.io/cloning_domino/'
+    link : 'https://github.com/keumju/cloning_domino.git'
 },{
     class : 'socar',
     img : 'assets/socar.png',
@@ -144,10 +147,10 @@ export const cloneDatas = [{
     txt : 'React, CSS를 사용하여 클로닝 사이트를 제작하였습니다.',
     btn1: 'go site',
     btn1Img: site,
-    git : '',
+    git : 'https://keumju.github.io/cloning_socar/',
     btn3: 'github',
     btn3Img: git,
-    link : ''
+    link : 'https://github.com/keumju/cloning_socar.git'
 },{
     class : 'gongju',
     img : 'assets/gongju.png',
@@ -156,10 +159,10 @@ export const cloneDatas = [{
     txt : 'HTML, CSS, JavaScript를 사용하여 클로닝 사이트를 제작하였습니다.',
     btn1: 'go site',
     btn1Img: site,
-    git : 'https://github.com/keumju/cloning_gongju.git',
+    git : 'https://keumju.github.io/cloning_gongju/',
     btn3: 'github',
     btn3Img: git,
-    link : 'https://keumju.github.io/cloning_gongju/'
+    link : 'https://github.com/keumju/cloning_gongju.git'
 },{
     class : 'bizcar',
     img : 'assets/bizcar.png',
@@ -168,22 +171,22 @@ export const cloneDatas = [{
     txt : 'HTML, CSS, JavaScript를 사용하여 클로닝 사이트를 제작하였습니다.',
     btn1: 'go site',
     btn1Img: site,
-    git : 'https://github.com/keumju/cloning_bizcar.git',
+    git : 'https://keumju.github.io/cloning_bizcar/',
     btn3: 'github',
     btn3Img: git,
-    link : 'https://keumju.github.io/cloning_bizcar/'
+    link : 'https://github.com/keumju/cloning_bizcar.git'
 },
-// {
-//     class : 'ktg',
-//     img : '',
-//     logo: '',
-//     tit : 'KT&G 사이트 클로닝',
-//     txt : 'HTML, CSS, JavaScript를 사용하여 클로닝 사이트를 제작하였습니다.',
-//     btn1: 'go site',
-//     btn1Img: site,
-//     git : 'https://github.com/keumju/cloning_kt-g.git',
-//     btn3: 'github',
-//     btn3Img: git,
-//     link : 'https://keumju.github.io/cloning_kt-g/'
-// },
+{
+    class : 'ktg',
+    img : 'assets/ktg.png',
+    logo: '',
+    tit : 'KT&G 사이트 클로닝',
+    txt : 'HTML, CSS, JavaScript를 사용하여 클로닝 사이트를 제작하였습니다.',
+    btn1: 'go site',
+    btn1Img: site,
+    git : 'https://keumju.github.io/cloning_kt-g/',
+    btn3: 'github',
+    btn3Img: git,
+    link : 'https://github.com/keumju/cloning_kt-g.git'
+},
 ]

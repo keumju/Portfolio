@@ -7,7 +7,7 @@ const About3 = () => {
         },{   
             text: '노션 블로그 바로가기',
             Img: 'assets/notion.png',
-            link: 'https://www.notion.so/STUDY-LOG-e406c0ca86c14023a6df436f1a3cabf7?pvs=4'
+            link: 'https://hickory-rise-dcc.notion.site/STUDY-LOG-e406c0ca86c14023a6df436f1a3cabf7'
         },{
             text: '티스토리 블로그 바로가기',
             Img: 'assets/blog.png',

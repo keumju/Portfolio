@@ -63,11 +63,12 @@ const Clone = ()=>{
                     return(
                     <ul className={`CloneSite ${data.class}`} key={key}>
                         <li className="CloneNum">0{key+1}</li>
-                        <li className="CloneImg" style={{backgroundImage : `url(${data.img})`}}></li>
+                        <li className="CloneImg">
+                            <img src={data.img}/>
+                        </li>
                         <li className="CloneTit">{data.tit}</li>
-                        <li className="CloneTxt">{data.txt}</li>
-                        <li className='CloneBtn'>
-                            <Button name={data.btn1} link={data.link} img={data.btn1Img}/>
+                        <li className='CloneBtn btnWrap'>
+                            <Button name={data.btn1} link={data.git} img={data.btn1Img}/>
                             <Button name={data.btn3} link={data.link} img={data.btn3Img}/>
                         </li>
                     </ul>
