@@ -29,7 +29,7 @@ export const projectDatas = [{
     bgImg: 'assets/festival.avif',
     btn1: 'go site',
     btn1Img: site,
-    btn1Link: 'https://keumju.github.io/bandifesta/',
+    btn1Link: 'https://thesandfox.github.io/bandifesta',
     btn2: 'figma',
     btn2Img: figma,
     btn2Link: 'https://www.figma.com/design/4hKjaZEbRsl1pGeaUSQKjY/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD-%EB%B0%A4%EC%82%B0%EC%B1%85?node-id=0-1&m=dev&t=WdWtFrFXJUalo6Vu-1',
